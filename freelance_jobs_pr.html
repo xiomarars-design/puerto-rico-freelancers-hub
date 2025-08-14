@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puerto Rico Freelancers Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fdfaf6;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+    nav {
+      background-color: rgba(255,127,80,0.9);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.7rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2E8B57;
+      margin-bottom: 1rem;
+    }
+    .search-bar input {
+      padding: 0.7rem;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    button {
+      background-color: #40E0D0;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #2cb5a0;
+    }
+    footer {
+      background-color: #FF7F50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .forum-post {
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem 0;
+    }
+    .icon {
+      color: #FF7F50;
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i class="fa-solid fa-palm-tree"></i> Puerto Rico Freelancers Hub</h1>
+    <p>Find & post flexible, remote jobs for professionals in Puerto Rico</p>
+  </header>
+  <nav>
+    <a href="#jobs">Jobs</a>
+    <a href="#post">Post a Job</a>
+    <a href="#profile">Create Profile</a>
+    <a href="#ratings">Rate Employers</a>
+    <a href="#freelancer-ratings">Rate Freelancers</a>
+    <a href="#forum">Forum</a>
+  </nav>
+  <div class="container">
+    <section id="jobs">
+      <h2><i class="fa-solid fa-briefcase icon"></i>Latest Freelance Opportunities</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Search jobs...">
+      </div>
+      <ul>
+        <li>🌴 Web Designer - Remote - Part-Time</li>
+        <li>📊 Virtual Accountant - Flexible Hours</li>
+        <li>✍ Content Writer - Contract</li>
+      </ul>
+    </section>
+    <section id="post">
+      <h2><i class="fa-solid fa-pen-to-square icon"></i>Post a Job</h2>
+      <form>
+        <label>Job Title:<br><input type="text" required></label><br><br>
+        <label>Description:<br><textarea rows="4" required></textarea></label><br><br>
+        <label>Category:<br><select><option>Design</option><option>Writing</option><option>Marketing</option></select></label><br><br>
+        <button type="submit">Submit Job</button>
+      </form>
+    </section>
+    <section id="profile">
+      <h2><i class="fa-solid fa-user-plus icon"></i>Create Your Freelancer Profile</h2>
+      <form>
+        <label>Name:<br><input type="text" required></label><br><br>
+        <label>Email:<br><input type="email" required></label><br><br>
+        <label>Skills:<br><textarea rows="3" required></textarea></label><br><br>
+        <label>Portfolio Link:<br><input type="url"></label><br><br>
+        <label>About You:<br><textarea rows="4" required></textarea></label><br><br>
+        <button type="submit">Create Profile</button>
+      </form>
+    </section>
+    <section id="ratings">
+      <h2><i class="fa-solid fa-star icon"></i>Rate Employers</h2>
+      <form>
+        <label>Employer Name:<br><input type="text" required></label><br><br>
+        <label>Rating:<br><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></label><br><br>
+        <label>Comment:<br><textarea rows="3"></textarea></label><br><br>
+        <button type="submit">Submit Rating</button>
+      </form>
+    </section>
+    <section id="freelancer-ratings">
+      <h2><i class="fa-solid fa-star-half-stroke icon"></i>Rate Freelancers</h2>
+      <form>
+        <label>Freelancer Name:<br><input type="text" required></label><br><br>
+        <label>Rating:<br><select><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></label><br><br>
+        <label>Comment:<br><textarea rows="3"></textarea></label><br><br>
+        <button type="submit">Submit Rating</button>
+      </form>
+    </section>
+    <section id="forum">
+      <h2><i class="fa-solid fa-comments icon"></i>Community Forum</h2>
+      <div class="forum-post"><strong>MariaPR:</strong> Any tips for finding remote work fast?</div>
+      <div class="forum-post"><strong>CarlosDev:</strong> I just landed a client from here. Thanks!</div>
+      <form>
+        <label>New Post:<br><textarea rows="3" required></textarea></label><br><br>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 Puerto Rico Freelancers Hub 🌴</p>
+  </footer>
+</body>
+</html>
